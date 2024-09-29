@@ -15,7 +15,7 @@ if ($num > 0) {
     setcookie("message", "delete", time() - 1);
     header("Location: ../produk/tampil.php");
 } else {
-    setcookie("message", "Sorry, Username or password is incorrect", time() + 3600);
-    header("Location: index.php");
+    
+    header("Location: ./loginn.php?login=failed");
 }
 ?>
